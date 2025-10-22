@@ -146,15 +146,15 @@
                     </div>
 
                     <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col transform hover:scale-105 transition-transform duration-300 md:col-span-1 lg:col-span-1">
-                        <h3 class="text-xl font-bold text-[#CC333F] mb-4">5. 1인 창업, AI로 브랜딩하기</h3>
-                        <p class="text-[#6A4A3C] mb-4 flex-grow">내 사업 아이템에 대해 Gemini와 토론하며 브랜드 스토리를 만들고, Nano-Banana로 로고 시안과 홍보 이미지를 제작합니다.</p>
-                        <div class="mb-4"><span class="font-bold">사용 도구:</span> 🧠 Gemini + 🎨 Nano-Banana</div>
+                        <h3 class="text-xl font-bold text-[#CC333F] mb-4">5. 1인 창업, 데이터 기반 브랜딩하기</h3>
+                        <p class="text-[#6A4A3C] mb-4 flex-grow">**시장 자료를 NotebookLM에 업로드**하여 핵심 인사이트를 도출합니다. 이 분석을 기반으로 Gemini와 토론하여 브랜드 스토리를 만들고, Nano-Banana로 로고 시안과 홍보 이미지를 제작합니다.</p>
+                        <div class="mb-4"><span class="font-bold">사용 도구:</span> 📓 NotebookLM + 🧠 Gemini + 🎨 Nano-Banana</div>
                         <div class="w-full bg-gray-100 p-3 rounded-lg">
                            <p class="font-semibold text-sm text-center text-[#6A4A3C] mb-2">브랜딩 과정</p>
                             <div class="flex items-center justify-center space-x-1 text-xs sm:text-sm">
-                                <div class="bg-[#EDC951] text-[#6A4A3C] font-bold py-1 px-2 rounded">아이템 분석</div>
+                                <div class="bg-[#EDC951] text-[#6A4A3C] font-bold py-1 px-2 rounded">NotebookLM: 자료 분석</div>
                                 <div class="text-[#00A0B0] font-bold">&rarr;</div>
-                                <div class="bg-[#EB6841] text-white font-bold py-1 px-2 rounded">Gemini: 브랜드 스토리</div>
+                                <div class="bg-[#EB6841] text-white font-bold py-1 px-2 rounded">Gemini: 스토리/토론</div>
                                 <div class="text-[#00A0B0] font-bold">&rarr;</div>
                                 <div class="bg-[#CC333F] text-white font-bold py-1 px-2 rounded">Nano-Banana: 로고/이미지</div>
                             </div>
@@ -255,8 +255,9 @@
                     pointBackgroundColor: '#00A0B0',
                 },
                  {
-                    label: '1인 창업 브랜딩',
-                    data: [4, 5, 4, 3, 4],
+                    // 1인 창업 브랜딩: NotebookLM 추가로 난이도(기술 난이도) 3->4 상향 조정
+                    label: '1인 창업 브랜딩', 
+                    data: [4, 5, 4, 4, 4], 
                     fill: true,
                     backgroundColor: 'rgba(204, 51, 63, 0.2)',
                     borderColor: '#CC333F',
